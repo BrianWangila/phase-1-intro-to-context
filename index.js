@@ -74,8 +74,8 @@ const allWagesFor = (employeeRecord) => {
 
 
 const calculatePayroll = (employeeArray) => {
-  return employeeArray.reduce((total, rec) => {
-    return total + allWagesFor(rec)
+  return employeeArray.reduce((total, record) => {
+    return total + allWagesFor(record)
   }, 0)
 
 }
